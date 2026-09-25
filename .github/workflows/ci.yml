@@ -28,3 +28,14 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run build
+
+  # branch ruleset で要求するステータスチェック。マトリクスの値が変わってもチェック名が変わらないよう、test の全ジョブの結果をここで束ねる。
+  test-result:
+    if: always()
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - if: needs.test.result != 'success'
+        run: |
+          echo "test の結果: ${{ needs.test.result }}"
+          exit 1

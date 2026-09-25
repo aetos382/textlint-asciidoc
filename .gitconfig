@@ -10,3 +10,8 @@
 [hook "prettier-check"]
   event = pre-commit
   command = bash .githooks/prettier-check.sh
+
+# renovate.json の誤りは Renovate が PR を作らなくなるまで気付きにくいので、コミットする前に検証する。
+[hook "validate-renovate-config"]
+  event = pre-commit
+  command = bash .githooks/validate-renovate-config.sh

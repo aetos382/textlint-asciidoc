@@ -1,0 +1,91 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "configMigration": true,
+  "labels": ["dependencies"],
+  "extends": [
+    "config:best-practices",
+    "helpers:pinGitHubActionDigestsToSemver",
+    "security:openssf-scorecard"
+  ],
+  "timezone": "Asia/Tokyo",
+  "minimumReleaseAge": "3 days",
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "packageRules": [
+    {
+      "matchManagers": ["devcontainer"],
+      "matchDepTypes": ["feature"],
+      "enabled": false,
+      "description": "Dependabot updates devcontainer features, because Renovate does not update devcontainer-lock.json (renovatebot/renovate#43169)"
+    },
+    {
+      "matchDatasources": ["github-tags"],
+      "automerge": true,
+      "description": "Auto-merge minor/patch/pin/digest updates for trusted GitHub Actions",
+      "matchDepNames": ["/^actions//", "/^github//"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "description": "Auto-merge dev-only npm minor/patch"
+    },
+    {
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "minimumReleaseAge": null,
+      "automerge": true,
+      "description": "Allow automerge pin updates"
+    },
+    {
+      "matchUpdateTypes": ["replacement"],
+      "minimumReleaseAge": null,
+      "automerge": false,
+      "commitMessagePrefix": "[cautionable]",
+      "description": "Report cautionable updates"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "description": "Don't automerge major updates"
+    },
+    {
+      "matchPackageNames": ["textlint", "@textlint/**"],
+      "groupName": "textlint",
+      "description": "textlint packages are released together with the same version"
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<6.1",
+      "description": "typescript-eslint supports TypeScript <6.1. Remove this when typescript-eslint supports 6.1"
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<23",
+      "description": "Keep @types/node on the lowest Node.js major version in engines (22)"
+    },
+    {
+      "matchDepNames": ["koalaman/shellcheck"],
+      "prBodyNotes": [
+        "Renovate does not update the `SHA256` values in `.devcontainer/install-shellcheck.sh`. Update them manually before merging."
+      ],
+      "description": "ShellCheck checksums must be updated by hand"
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.devcontainer/.+\\.sh$/"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Z0-9_]+_VERSION='(?<currentValue>[^']+)'"
+      ],
+      "description": "Versions in dev container shell scripts, marked with a `# renovate:` comment"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "automerge": true,
+    "minimumReleaseAge": null,
+    "addLabels": ["security"]
+  }
+}

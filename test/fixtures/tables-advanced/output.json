@@ -1,0 +1,1138 @@
+{
+  "type": "Document",
+  "raw": "[cols=\"3*\"]\n|===\n3*|Repeated\n|One |Two |Three\n|===\n\n[cols=\"1,2a\"]\n|===\n|Outer cell\n|Outer asciidoc cell\n\n[cols=\"1,1\"]\n!===\n!Nested A !Nested B\n!===\n|===\n\n[%header,format=tsv]\n|===\nHead\tTail\nLeft\tRight\n|===\n\n|===\n// Comment line in a table.\n|Only cell\n|===\n\n[cols=\"m,l\"]\n|===\n|Monospace *strong* cell |Literal *cell*\n|===\n\n[cols=\"a\"]\n|===\n|// Comment in an asciidoc cell.\nParagraph in an asciidoc cell.\n|===\n",
+  "range": [
+    0,
+    407
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 39,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Table",
+      "raw": "|===\n3*|Repeated\n|One |Two |Three\n|===",
+      "range": [
+        12,
+        50
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "3*|Repeated",
+          "range": [
+            17,
+            28
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 11
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Repeated",
+              "range": [
+                20,
+                28
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 3
+                },
+                "end": {
+                  "line": 3,
+                  "column": 11
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Repeated",
+                  "range": [
+                    20,
+                    28
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 11
+                    }
+                  },
+                  "value": "Repeated"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "|One |Two |Three",
+          "range": [
+            29,
+            45
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 16
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "One",
+              "range": [
+                30,
+                33
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 1
+                },
+                "end": {
+                  "line": 4,
+                  "column": 4
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "One",
+                  "range": [
+                    30,
+                    33
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 4
+                    }
+                  },
+                  "value": "One"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Two",
+              "range": [
+                35,
+                38
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 6
+                },
+                "end": {
+                  "line": 4,
+                  "column": 9
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Two",
+                  "range": [
+                    35,
+                    38
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 9
+                    }
+                  },
+                  "value": "Two"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Three",
+              "range": [
+                40,
+                45
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 11
+                },
+                "end": {
+                  "line": 4,
+                  "column": 16
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Three",
+                  "range": [
+                    40,
+                    45
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 16
+                    }
+                  },
+                  "value": "Three"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\n|Outer cell\n|Outer asciidoc cell\n\n[cols=\"1,1\"]\n!===\n!Nested A !Nested B\n!===\n|===",
+      "range": [
+        66,
+        152
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "|Outer cell\n|Outer asciidoc cell\n\n[cols=\"1,1\"]\n!===\n!Nested A !Nested B\n!===",
+          "range": [
+            71,
+            147
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 15,
+              "column": 4
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Outer cell",
+              "range": [
+                72,
+                82
+              ],
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 1
+                },
+                "end": {
+                  "line": 9,
+                  "column": 11
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Outer cell",
+                  "range": [
+                    72,
+                    82
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 11
+                    }
+                  },
+                  "value": "Outer cell"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Outer asciidoc cell\n\n[cols=\"1,1\"]\n!===\n!Nested A !Nested B\n!===",
+              "range": [
+                84,
+                147
+              ],
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 1
+                },
+                "end": {
+                  "line": 15,
+                  "column": 4
+                }
+              },
+              "children": [
+                {
+                  "type": "Paragraph",
+                  "raw": "Outer asciidoc cell",
+                  "range": [
+                    84,
+                    103
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "Outer asciidoc cell",
+                      "range": [
+                        84,
+                        103
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 20
+                        }
+                      },
+                      "value": "Outer asciidoc cell"
+                    }
+                  ],
+                  "asciidoc": {
+                    "context": "paragraph"
+                  }
+                },
+                {
+                  "type": "Table",
+                  "raw": "!===\n!Nested A !Nested B\n!===",
+                  "range": [
+                    118,
+                    147
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 4
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "TableRow",
+                      "raw": "!Nested A !Nested B",
+                      "range": [
+                        123,
+                        142
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 19
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "TableCell",
+                          "raw": "Nested A",
+                          "range": [
+                            124,
+                            132
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 1
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 9
+                            }
+                          },
+                          "children": [
+                            {
+                              "type": "Str",
+                              "raw": "Nested A",
+                              "range": [
+                                124,
+                                132
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 14,
+                                  "column": 1
+                                },
+                                "end": {
+                                  "line": 14,
+                                  "column": 9
+                                }
+                              },
+                              "value": "Nested A"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "TableCell",
+                          "raw": "Nested B",
+                          "range": [
+                            134,
+                            142
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 19
+                            }
+                          },
+                          "children": [
+                            {
+                              "type": "Str",
+                              "raw": "Nested B",
+                              "range": [
+                                134,
+                                142
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 14,
+                                  "column": 11
+                                },
+                                "end": {
+                                  "line": 14,
+                                  "column": 19
+                                }
+                              },
+                              "value": "Nested B"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "asciidoc": {
+                    "context": "table",
+                    "style": "table"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\nHead\tTail\nLeft\tRight\n|===",
+      "range": [
+        175,
+        205
+      ],
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "Head\tTail",
+          "range": [
+            180,
+            189
+          ],
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 0
+            },
+            "end": {
+              "line": 20,
+              "column": 9
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Head",
+              "range": [
+                180,
+                184
+              ],
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 0
+                },
+                "end": {
+                  "line": 20,
+                  "column": 4
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Head",
+                  "range": [
+                    180,
+                    184
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 20,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 4
+                    }
+                  },
+                  "value": "Head"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Tail",
+              "range": [
+                185,
+                189
+              ],
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 5
+                },
+                "end": {
+                  "line": 20,
+                  "column": 9
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Tail",
+                  "range": [
+                    185,
+                    189
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 20,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 9
+                    }
+                  },
+                  "value": "Tail"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "Left\tRight",
+          "range": [
+            190,
+            200
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 21,
+              "column": 10
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Left",
+              "range": [
+                190,
+                194
+              ],
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 0
+                },
+                "end": {
+                  "line": 21,
+                  "column": 4
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Left",
+                  "range": [
+                    190,
+                    194
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 4
+                    }
+                  },
+                  "value": "Left"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Right",
+              "range": [
+                195,
+                200
+              ],
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 5
+                },
+                "end": {
+                  "line": 21,
+                  "column": 10
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Right",
+                  "range": [
+                    195,
+                    200
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 10
+                    }
+                  },
+                  "value": "Right"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\n// Comment line in a table.\n|Only cell\n|===",
+      "range": [
+        207,
+        255
+      ],
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "|Only cell",
+          "range": [
+            240,
+            250
+          ],
+          "loc": {
+            "start": {
+              "line": 26,
+              "column": 0
+            },
+            "end": {
+              "line": 26,
+              "column": 10
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Only cell",
+              "range": [
+                241,
+                250
+              ],
+              "loc": {
+                "start": {
+                  "line": 26,
+                  "column": 1
+                },
+                "end": {
+                  "line": 26,
+                  "column": 10
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Only cell",
+                  "range": [
+                    241,
+                    250
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 26,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 26,
+                      "column": 10
+                    }
+                  },
+                  "value": "Only cell"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\n|Monospace *strong* cell |Literal *cell*\n|===",
+      "range": [
+        270,
+        320
+      ],
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "|Monospace *strong* cell |Literal *cell*",
+          "range": [
+            275,
+            315
+          ],
+          "loc": {
+            "start": {
+              "line": 31,
+              "column": 0
+            },
+            "end": {
+              "line": 31,
+              "column": 40
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Monospace *strong* cell",
+              "range": [
+                276,
+                299
+              ],
+              "loc": {
+                "start": {
+                  "line": 31,
+                  "column": 1
+                },
+                "end": {
+                  "line": 31,
+                  "column": 24
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Monospace ",
+                  "range": [
+                    276,
+                    286
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 11
+                    }
+                  },
+                  "value": "Monospace "
+                },
+                {
+                  "type": "Strong",
+                  "raw": "*strong*",
+                  "range": [
+                    286,
+                    294
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 19
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "strong",
+                      "range": [
+                        287,
+                        293
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 31,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 31,
+                          "column": 18
+                        }
+                      },
+                      "value": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "Str",
+                  "raw": " cell",
+                  "range": [
+                    294,
+                    299
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 19
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 24
+                    }
+                  },
+                  "value": " cell"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Literal *cell*",
+              "range": [
+                301,
+                315
+              ],
+              "loc": {
+                "start": {
+                  "line": 31,
+                  "column": 26
+                },
+                "end": {
+                  "line": 31,
+                  "column": 40
+                }
+              },
+              "children": [
+                {
+                  "type": "Code",
+                  "raw": "Literal *cell*",
+                  "range": [
+                    301,
+                    315
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 40
+                    }
+                  },
+                  "value": "Literal *cell*"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\n|// Comment in an asciidoc cell.\nParagraph in an asciidoc cell.\n|===",
+      "range": [
+        333,
+        406
+      ],
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 0
+        },
+        "end": {
+          "line": 38,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "|// Comment in an asciidoc cell.\nParagraph in an asciidoc cell.",
+          "range": [
+            338,
+            401
+          ],
+          "loc": {
+            "start": {
+              "line": 36,
+              "column": 0
+            },
+            "end": {
+              "line": 37,
+              "column": 30
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "// Comment in an asciidoc cell.\nParagraph in an asciidoc cell.",
+              "range": [
+                339,
+                401
+              ],
+              "loc": {
+                "start": {
+                  "line": 36,
+                  "column": 1
+                },
+                "end": {
+                  "line": 37,
+                  "column": 30
+                }
+              },
+              "children": [
+                {
+                  "type": "Paragraph",
+                  "raw": "// Comment in an asciidoc cell.",
+                  "range": [
+                    339,
+                    370
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 36,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 36,
+                      "column": 32
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Comment",
+                      "raw": "// Comment in an asciidoc cell.",
+                      "range": [
+                        339,
+                        370
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 36,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 36,
+                          "column": 32
+                        }
+                      },
+                      "value": " Comment in an asciidoc cell."
+                    }
+                  ],
+                  "asciidoc": {
+                    "context": "comment"
+                  }
+                },
+                {
+                  "type": "Paragraph",
+                  "raw": "Paragraph in an asciidoc cell.",
+                  "range": [
+                    371,
+                    401
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 37,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 37,
+                      "column": 30
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "Paragraph in an asciidoc cell.",
+                      "range": [
+                        371,
+                        401
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 37,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 37,
+                          "column": 30
+                        }
+                      },
+                      "value": "Paragraph in an asciidoc cell."
+                    }
+                  ],
+                  "asciidoc": {
+                    "context": "paragraph"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    }
+  ]
+}

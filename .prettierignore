@@ -1,0 +1,10 @@
+dist/
+temp/
+test/fixtures/
+package-lock.json
+
+# 開発環境の設定ファイルは整形の対象にしない。
+.claude/
+.devcontainer/
+.mcp.json
+CLAUDE.md

@@ -1,0 +1,27 @@
+[source,javascript]
+----
+const a = 1;
+// Not an AsciiDoc comment.
+----
+
+....
+Literal block.
+....
+
+  Indented literal.
+
+```ruby
+puts "fenced"
+```
+
+[source,python]
+print("paragraph style")
+
+++++
+<p>Passthrough</p>
+++++
+
+[stem]
+++++
+sqrt(4) = 2
+++++

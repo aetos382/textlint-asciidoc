@@ -41,7 +41,8 @@
         "github.vscode-github-actions",
         "GitHub.vscode-pull-request-github",
         "ms-vscode.powershell",
-        "timonwong.shellcheck"
+        "timonwong.shellcheck",
+        "vitest.explorer"
       ],
       "settings": {
         "files.eol": "\n",

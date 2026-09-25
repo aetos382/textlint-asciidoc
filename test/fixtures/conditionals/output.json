@@ -1,0 +1,271 @@
+{
+  "type": "Document",
+  "raw": "ifdef::undefined-attribute[]\nContent inside a false ifdef.\n\n* A list inside ifdef\nendif::[]\n\nifndef::undefined-attribute[]\nContent inside a true ifndef.\nendif::[]\n\nifeval::[1 > 2]\nContent inside a false ifeval.\nendif::[]\n\nAfter conditionals.\n",
+  "range": [
+    0,
+    242
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 16,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Paragraph",
+      "raw": "Content inside a false ifdef.",
+      "range": [
+        29,
+        58
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 29
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Content inside a false ifdef.",
+          "range": [
+            29,
+            58
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 29
+            }
+          },
+          "value": "Content inside a false ifdef."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "List",
+      "raw": "* A list inside ifdef",
+      "range": [
+        60,
+        81
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 21
+        }
+      },
+      "ordered": false,
+      "children": [
+        {
+          "type": "ListItem",
+          "raw": "* A list inside ifdef",
+          "range": [
+            60,
+            81
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 21
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "A list inside ifdef",
+              "range": [
+                62,
+                81
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 2
+                },
+                "end": {
+                  "line": 4,
+                  "column": 21
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "A list inside ifdef",
+                  "range": [
+                    62,
+                    81
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 21
+                    }
+                  },
+                  "value": "A list inside ifdef"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "ulist"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Content inside a true ifndef.",
+      "range": [
+        123,
+        152
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 29
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Content inside a true ifndef.",
+          "range": [
+            123,
+            152
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 8,
+              "column": 29
+            }
+          },
+          "value": "Content inside a true ifndef."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Content inside a false ifeval.",
+      "range": [
+        180,
+        210
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 30
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Content inside a false ifeval.",
+          "range": [
+            180,
+            210
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 0
+            },
+            "end": {
+              "line": 12,
+              "column": 30
+            }
+          },
+          "value": "Content inside a false ifeval."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "After conditionals.",
+      "range": [
+        222,
+        241
+      ],
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 19
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "After conditionals.",
+          "range": [
+            222,
+            241
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 0
+            },
+            "end": {
+              "line": 15,
+              "column": 19
+            }
+          },
+          "value": "After conditionals."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    }
+  ]
+}

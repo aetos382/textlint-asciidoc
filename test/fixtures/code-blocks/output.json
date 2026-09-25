@@ -1,0 +1,184 @@
+{
+  "type": "Document",
+  "raw": "[source,javascript]\n----\nconst a = 1;\n// Not an AsciiDoc comment.\n----\n\n....\nLiteral block.\n....\n\n  Indented literal.\n\n```ruby\nputs \"fenced\"\n```\n\n[source,python]\nprint(\"paragraph style\")\n\n++++\n<p>Passthrough</p>\n++++\n\n[stem]\n++++\nsqrt(4) = 2\n++++\n",
+  "range": [
+    0,
+    247
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 28,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "CodeBlock",
+      "raw": "----\nconst a = 1;\n// Not an AsciiDoc comment.\n----",
+      "range": [
+        20,
+        70
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 4
+        }
+      },
+      "value": "const a = 1;\n// Not an AsciiDoc comment.",
+      "lang": "javascript",
+      "asciidoc": {
+        "context": "listing",
+        "style": "source"
+      }
+    },
+    {
+      "type": "CodeBlock",
+      "raw": "....\nLiteral block.\n....",
+      "range": [
+        72,
+        96
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 4
+        }
+      },
+      "value": "Literal block.",
+      "asciidoc": {
+        "context": "literal",
+        "style": "literal"
+      }
+    },
+    {
+      "type": "CodeBlock",
+      "raw": "  Indented literal.",
+      "range": [
+        98,
+        117
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 19
+        }
+      },
+      "value": "  Indented literal.",
+      "asciidoc": {
+        "context": "literal"
+      }
+    },
+    {
+      "type": "CodeBlock",
+      "raw": "```ruby\nputs \"fenced\"\n```",
+      "range": [
+        119,
+        144
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      },
+      "value": "puts \"fenced\"",
+      "lang": "ruby",
+      "asciidoc": {
+        "context": "listing",
+        "style": "source"
+      }
+    },
+    {
+      "type": "CodeBlock",
+      "raw": "print(\"paragraph style\")",
+      "range": [
+        162,
+        186
+      ],
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 24
+        }
+      },
+      "value": "print(\"paragraph style\")",
+      "lang": "python",
+      "asciidoc": {
+        "context": "listing",
+        "style": "source"
+      }
+    },
+    {
+      "type": "Html",
+      "raw": "++++\n<p>Passthrough</p>\n++++",
+      "range": [
+        188,
+        216
+      ],
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 4
+        }
+      },
+      "value": "<p>Passthrough</p>",
+      "asciidoc": {
+        "context": "pass",
+        "style": "pass"
+      }
+    },
+    {
+      "type": "CodeBlock",
+      "raw": "++++\nsqrt(4) = 2\n++++",
+      "range": [
+        225,
+        246
+      ],
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 4
+        }
+      },
+      "value": "sqrt(4) = 2",
+      "lang": "asciimath",
+      "asciidoc": {
+        "context": "stem",
+        "style": "asciimath"
+      }
+    }
+  ]
+}

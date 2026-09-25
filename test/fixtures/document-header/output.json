@@ -1,0 +1,404 @@
+{
+  "type": "Document",
+  "raw": "= Document Title\nAuthor Name <author@example.com>\nv1.0, 2026-01-01\n:toc:\n:description: This attribute \\\n  continues on the next line.\n\nPreamble text.\n\n== Section Level 1\n\nContent of level 1.\n\n=== Section Level 2 ===\n\nContent of level 2.\n\n[discrete]\n== Discrete Heading\n\nLegacy Title\n~~~~~~~~~~~~\n\nAfter legacy title.\n",
+  "range": [
+    0,
+    317
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 25,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Header",
+      "raw": "= Document Title",
+      "range": [
+        0,
+        16
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 16
+        }
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Document Title",
+          "range": [
+            2,
+            16
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 2
+            },
+            "end": {
+              "line": 1,
+              "column": 16
+            }
+          },
+          "value": "Document Title"
+        }
+      ],
+      "asciidoc": {
+        "context": "document"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Preamble text.",
+      "range": [
+        135,
+        149
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 14
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Preamble text.",
+          "range": [
+            135,
+            149
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 8,
+              "column": 14
+            }
+          },
+          "value": "Preamble text."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Header",
+      "raw": "== Section Level 1",
+      "range": [
+        151,
+        169
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 18
+        }
+      },
+      "depth": 2,
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Section Level 1",
+          "range": [
+            154,
+            169
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 3
+            },
+            "end": {
+              "line": 10,
+              "column": 18
+            }
+          },
+          "value": "Section Level 1"
+        }
+      ],
+      "asciidoc": {
+        "context": "section"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Content of level 1.",
+      "range": [
+        171,
+        190
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 19
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Content of level 1.",
+          "range": [
+            171,
+            190
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 0
+            },
+            "end": {
+              "line": 12,
+              "column": 19
+            }
+          },
+          "value": "Content of level 1."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Header",
+      "raw": "=== Section Level 2 ===",
+      "range": [
+        192,
+        215
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 23
+        }
+      },
+      "depth": 3,
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Section Level 2",
+          "range": [
+            196,
+            211
+          ],
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 4
+            },
+            "end": {
+              "line": 14,
+              "column": 19
+            }
+          },
+          "value": "Section Level 2"
+        }
+      ],
+      "asciidoc": {
+        "context": "section"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Content of level 2.",
+      "range": [
+        217,
+        236
+      ],
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 19
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Content of level 2.",
+          "range": [
+            217,
+            236
+          ],
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 19
+            }
+          },
+          "value": "Content of level 2."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Header",
+      "raw": "== Discrete Heading",
+      "range": [
+        249,
+        268
+      ],
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 19
+        }
+      },
+      "depth": 2,
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Discrete Heading",
+          "range": [
+            252,
+            268
+          ],
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 3
+            },
+            "end": {
+              "line": 19,
+              "column": 19
+            }
+          },
+          "value": "Discrete Heading"
+        }
+      ],
+      "asciidoc": {
+        "context": "floating_title",
+        "style": "discrete"
+      }
+    },
+    {
+      "type": "Header",
+      "raw": "Legacy Title\n~~~~~~~~~~~~",
+      "range": [
+        270,
+        295
+      ],
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 12
+        }
+      },
+      "depth": 3,
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Legacy Title",
+          "range": [
+            270,
+            282
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 21,
+              "column": 12
+            }
+          },
+          "value": "Legacy Title"
+        }
+      ],
+      "asciidoc": {
+        "context": "section"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "After legacy title.",
+      "range": [
+        297,
+        316
+      ],
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 0
+        },
+        "end": {
+          "line": 24,
+          "column": 19
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "After legacy title.",
+          "range": [
+            297,
+            316
+          ],
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 0
+            },
+            "end": {
+              "line": 24,
+              "column": 19
+            }
+          },
+          "value": "After legacy title."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    }
+  ]
+}

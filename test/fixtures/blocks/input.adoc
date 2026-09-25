@@ -1,0 +1,46 @@
+NOTE: One-line admonition.
+
+[TIP]
+Paragraph-style admonition.
+
+[WARNING]
+====
+Delimited admonition.
+
+* with a list
+====
+
+.Sidebar title
+****
+Sidebar content.
+****
+
+====
+Example content.
+====
+
+--
+Open block content.
+--
+
+[quote, Someone, Somewhere]
+____
+Quoted text.
+____
+
+[verse, Poet]
+____
+Verse line one
+verse line two
+____
+
+[quote]
+Quoted paragraph.
+
+'''
+
+<<<
+
+image::diagram.png[Diagram]
+
+toc::[]

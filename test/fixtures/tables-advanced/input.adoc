@@ -1,0 +1,38 @@
+[cols="3*"]
+|===
+3*|Repeated
+|One |Two |Three
+|===
+
+[cols="1,2a"]
+|===
+|Outer cell
+|Outer asciidoc cell
+
+[cols="1,1"]
+!===
+!Nested A !Nested B
+!===
+|===
+
+[%header,format=tsv]
+|===
+Head	Tail
+Left	Right
+|===
+
+|===
+// Comment line in a table.
+|Only cell
+|===
+
+[cols="m,l"]
+|===
+|Monospace *strong* cell |Literal *cell*
+|===
+
+[cols="a"]
+|===
+|// Comment in an asciidoc cell.
+Paragraph in an asciidoc cell.
+|===

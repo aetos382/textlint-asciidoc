@@ -1,0 +1,541 @@
+{
+  "type": "Document",
+  "raw": "CPU:: The brain of the computer.\nHard drive::\n  Permanent storage.\nRAM::\nMemory::\n  Temporary storage.\n+\nAttached paragraph.\n\nQuestion;; Answer.\n",
+  "range": [
+    0,
+    145
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 11,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "List",
+      "raw": "CPU:: The brain of the computer.\nHard drive::\n  Permanent storage.\nRAM::\nMemory::\n  Temporary storage.\n+\nAttached paragraph.\n\nQuestion;; Answer.",
+      "range": [
+        0,
+        144
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 18
+        }
+      },
+      "ordered": false,
+      "children": [
+        {
+          "type": "ListItem",
+          "raw": "CPU:: The brain of the computer.",
+          "range": [
+            0,
+            32
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 32
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "CPU",
+              "range": [
+                0,
+                3
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 3
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "CPU",
+                  "range": [
+                    0,
+                    3
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 3
+                    }
+                  },
+                  "value": "CPU"
+                }
+              ]
+            },
+            {
+              "type": "Paragraph",
+              "raw": "The brain of the computer.",
+              "range": [
+                6,
+                32
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 6
+                },
+                "end": {
+                  "line": 1,
+                  "column": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "The brain of the computer.",
+                  "range": [
+                    6,
+                    32
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 32
+                    }
+                  },
+                  "value": "The brain of the computer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "raw": "Hard drive::\n  Permanent storage.",
+          "range": [
+            33,
+            66
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 20
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Hard drive",
+              "range": [
+                33,
+                43
+              ],
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 0
+                },
+                "end": {
+                  "line": 2,
+                  "column": 10
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Hard drive",
+                  "range": [
+                    33,
+                    43
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 10
+                    }
+                  },
+                  "value": "Hard drive"
+                }
+              ]
+            },
+            {
+              "type": "Paragraph",
+              "raw": "Permanent storage.",
+              "range": [
+                48,
+                66
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 2
+                },
+                "end": {
+                  "line": 3,
+                  "column": 20
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Permanent storage.",
+                  "range": [
+                    48,
+                    66
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 20
+                    }
+                  },
+                  "value": "Permanent storage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "raw": "RAM::\nMemory::\n  Temporary storage.\n+\nAttached paragraph.\n\nQuestion;; Answer.",
+          "range": [
+            67,
+            144
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 18
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "RAM",
+              "range": [
+                67,
+                70
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 4,
+                  "column": 3
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "RAM",
+                  "range": [
+                    67,
+                    70
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 3
+                    }
+                  },
+                  "value": "RAM"
+                }
+              ]
+            },
+            {
+              "type": "Paragraph",
+              "raw": "Memory",
+              "range": [
+                73,
+                79
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 0
+                },
+                "end": {
+                  "line": 5,
+                  "column": 6
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Memory",
+                  "range": [
+                    73,
+                    79
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 6
+                    }
+                  },
+                  "value": "Memory"
+                }
+              ]
+            },
+            {
+              "type": "Paragraph",
+              "raw": "Temporary storage.",
+              "range": [
+                84,
+                102
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 2
+                },
+                "end": {
+                  "line": 6,
+                  "column": 20
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Temporary storage.",
+                  "range": [
+                    84,
+                    102
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 20
+                    }
+                  },
+                  "value": "Temporary storage."
+                }
+              ]
+            },
+            {
+              "type": "Paragraph",
+              "raw": "Attached paragraph.",
+              "range": [
+                105,
+                124
+              ],
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 0
+                },
+                "end": {
+                  "line": 8,
+                  "column": 19
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Attached paragraph.",
+                  "range": [
+                    105,
+                    124
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 19
+                    }
+                  },
+                  "value": "Attached paragraph."
+                }
+              ],
+              "asciidoc": {
+                "context": "paragraph"
+              }
+            },
+            {
+              "type": "List",
+              "raw": "Question;; Answer.",
+              "range": [
+                126,
+                144
+              ],
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 0
+                },
+                "end": {
+                  "line": 10,
+                  "column": 18
+                }
+              },
+              "ordered": false,
+              "children": [
+                {
+                  "type": "ListItem",
+                  "raw": "Question;; Answer.",
+                  "range": [
+                    126,
+                    144
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 18
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Question",
+                      "range": [
+                        126,
+                        134
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Question",
+                          "range": [
+                            126,
+                            134
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 10,
+                              "column": 0
+                            },
+                            "end": {
+                              "line": 10,
+                              "column": 8
+                            }
+                          },
+                          "value": "Question"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Paragraph",
+                      "raw": "Answer.",
+                      "range": [
+                        137,
+                        144
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 18
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Answer.",
+                          "range": [
+                            137,
+                            144
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 10,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 10,
+                              "column": 18
+                            }
+                          },
+                          "value": "Answer."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "asciidoc": {
+                "context": "dlist"
+              }
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "dlist"
+      }
+    }
+  ]
+}

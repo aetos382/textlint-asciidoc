@@ -1,0 +1,7 @@
+Before include.
+
+include::missing-file.adoc[]
+
+include::other.adoc[lines=1..5]
+
+After include.

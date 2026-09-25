@@ -1,0 +1,15 @@
+ifdef::undefined-attribute[]
+Content inside a false ifdef.
+
+* A list inside ifdef
+endif::[]
+
+ifndef::undefined-attribute[]
+Content inside a true ifndef.
+endif::[]
+
+ifeval::[1 > 2]
+Content inside a false ifeval.
+endif::[]
+
+After conditionals.

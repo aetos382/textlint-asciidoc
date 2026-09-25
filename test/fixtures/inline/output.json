@@ -1,0 +1,1469 @@
+{
+  "type": "Document",
+  "raw": "Plain *strong* and _emphasis_ and `code` text.\n\nUnconstrained **st**rong, __em__phasis and ``co``de.\n\nNested *strong with _emphasis_ inside*.\n\nLiteral monospace `+*not strong*+` stays code.\n\nEscaped \\*not strong* and \\_not emphasis_.\n\n日本語の**強調**と``コード``と__斜体__。\n\nConstrained marks inside words like snake_case_name and a*b*c are ignored.\n\nLinks: https://example.com, https://example.com/path[with label], link:relative/path.html[relative link], mailto:someone@example.com[mail] and <https://example.org>.\n\nMacros stay in text: image:icon_file.png[Alt] footnote:[A _footnote_.] xref:other.adoc#id[Cross *ref*] <<anchor_id>> {attribute_name}.\n\nHard line break +\ncontinues here.\n\n[.role]*Styled strong* text.\n",
+  "range": [
+    0,
+    706
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 23,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Paragraph",
+      "raw": "Plain *strong* and _emphasis_ and `code` text.",
+      "range": [
+        0,
+        46
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 46
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Plain ",
+          "range": [
+            0,
+            6
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 6
+            }
+          },
+          "value": "Plain "
+        },
+        {
+          "type": "Strong",
+          "raw": "*strong*",
+          "range": [
+            6,
+            14
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 6
+            },
+            "end": {
+              "line": 1,
+              "column": 14
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "strong",
+              "range": [
+                7,
+                13
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 13
+                }
+              },
+              "value": "strong"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": " and ",
+          "range": [
+            14,
+            19
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 14
+            },
+            "end": {
+              "line": 1,
+              "column": 19
+            }
+          },
+          "value": " and "
+        },
+        {
+          "type": "Emphasis",
+          "raw": "_emphasis_",
+          "range": [
+            19,
+            29
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 19
+            },
+            "end": {
+              "line": 1,
+              "column": 29
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "emphasis",
+              "range": [
+                20,
+                28
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 20
+                },
+                "end": {
+                  "line": 1,
+                  "column": 28
+                }
+              },
+              "value": "emphasis"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": " and ",
+          "range": [
+            29,
+            34
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 29
+            },
+            "end": {
+              "line": 1,
+              "column": 34
+            }
+          },
+          "value": " and "
+        },
+        {
+          "type": "Code",
+          "raw": "`code`",
+          "range": [
+            34,
+            40
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 34
+            },
+            "end": {
+              "line": 1,
+              "column": 40
+            }
+          },
+          "value": "code"
+        },
+        {
+          "type": "Str",
+          "raw": " text.",
+          "range": [
+            40,
+            46
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 40
+            },
+            "end": {
+              "line": 1,
+              "column": 46
+            }
+          },
+          "value": " text."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Unconstrained **st**rong, __em__phasis and ``co``de.",
+      "range": [
+        48,
+        100
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 52
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Unconstrained ",
+          "range": [
+            48,
+            62
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 14
+            }
+          },
+          "value": "Unconstrained "
+        },
+        {
+          "type": "Strong",
+          "raw": "**st**",
+          "range": [
+            62,
+            68
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 14
+            },
+            "end": {
+              "line": 3,
+              "column": 20
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "st",
+              "range": [
+                64,
+                66
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 16
+                },
+                "end": {
+                  "line": 3,
+                  "column": 18
+                }
+              },
+              "value": "st"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "rong, ",
+          "range": [
+            68,
+            74
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 20
+            },
+            "end": {
+              "line": 3,
+              "column": 26
+            }
+          },
+          "value": "rong, "
+        },
+        {
+          "type": "Emphasis",
+          "raw": "__em__",
+          "range": [
+            74,
+            80
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 26
+            },
+            "end": {
+              "line": 3,
+              "column": 32
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "em",
+              "range": [
+                76,
+                78
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 28
+                },
+                "end": {
+                  "line": 3,
+                  "column": 30
+                }
+              },
+              "value": "em"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "phasis and ",
+          "range": [
+            80,
+            91
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 32
+            },
+            "end": {
+              "line": 3,
+              "column": 43
+            }
+          },
+          "value": "phasis and "
+        },
+        {
+          "type": "Code",
+          "raw": "``co``",
+          "range": [
+            91,
+            97
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 43
+            },
+            "end": {
+              "line": 3,
+              "column": 49
+            }
+          },
+          "value": "co"
+        },
+        {
+          "type": "Str",
+          "raw": "de.",
+          "range": [
+            97,
+            100
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 49
+            },
+            "end": {
+              "line": 3,
+              "column": 52
+            }
+          },
+          "value": "de."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Nested *strong with _emphasis_ inside*.",
+      "range": [
+        102,
+        141
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 39
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Nested ",
+          "range": [
+            102,
+            109
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 0
+            },
+            "end": {
+              "line": 5,
+              "column": 7
+            }
+          },
+          "value": "Nested "
+        },
+        {
+          "type": "Strong",
+          "raw": "*strong with _emphasis_ inside*",
+          "range": [
+            109,
+            140
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 7
+            },
+            "end": {
+              "line": 5,
+              "column": 38
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "strong with ",
+              "range": [
+                110,
+                122
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 8
+                },
+                "end": {
+                  "line": 5,
+                  "column": 20
+                }
+              },
+              "value": "strong with "
+            },
+            {
+              "type": "Emphasis",
+              "raw": "_emphasis_",
+              "range": [
+                122,
+                132
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 20
+                },
+                "end": {
+                  "line": 5,
+                  "column": 30
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "emphasis",
+                  "range": [
+                    123,
+                    131
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 21
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 29
+                    }
+                  },
+                  "value": "emphasis"
+                }
+              ]
+            },
+            {
+              "type": "Str",
+              "raw": " inside",
+              "range": [
+                132,
+                139
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 30
+                },
+                "end": {
+                  "line": 5,
+                  "column": 37
+                }
+              },
+              "value": " inside"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": ".",
+          "range": [
+            140,
+            141
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 38
+            },
+            "end": {
+              "line": 5,
+              "column": 39
+            }
+          },
+          "value": "."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Literal monospace `+*not strong*+` stays code.",
+      "range": [
+        143,
+        189
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 46
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Literal monospace ",
+          "range": [
+            143,
+            161
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 18
+            }
+          },
+          "value": "Literal monospace "
+        },
+        {
+          "type": "Code",
+          "raw": "`+*not strong*+`",
+          "range": [
+            161,
+            177
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 18
+            },
+            "end": {
+              "line": 7,
+              "column": 34
+            }
+          },
+          "value": "*not strong*"
+        },
+        {
+          "type": "Str",
+          "raw": " stays code.",
+          "range": [
+            177,
+            189
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 34
+            },
+            "end": {
+              "line": 7,
+              "column": 46
+            }
+          },
+          "value": " stays code."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Escaped \\*not strong* and \\_not emphasis_.",
+      "range": [
+        191,
+        233
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 42
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Escaped \\*not strong* and \\_not emphasis_.",
+          "range": [
+            191,
+            233
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 9,
+              "column": 42
+            }
+          },
+          "value": "Escaped \\*not strong* and \\_not emphasis_."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "日本語の**強調**と``コード``と__斜体__。",
+      "range": [
+        235,
+        261
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 26
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "日本語の",
+          "range": [
+            235,
+            239
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 11,
+              "column": 4
+            }
+          },
+          "value": "日本語の"
+        },
+        {
+          "type": "Strong",
+          "raw": "**強調**",
+          "range": [
+            239,
+            245
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 4
+            },
+            "end": {
+              "line": 11,
+              "column": 10
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "強調",
+              "range": [
+                241,
+                243
+              ],
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 6
+                },
+                "end": {
+                  "line": 11,
+                  "column": 8
+                }
+              },
+              "value": "強調"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "と",
+          "range": [
+            245,
+            246
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 10
+            },
+            "end": {
+              "line": 11,
+              "column": 11
+            }
+          },
+          "value": "と"
+        },
+        {
+          "type": "Code",
+          "raw": "``コード``",
+          "range": [
+            246,
+            253
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 11
+            },
+            "end": {
+              "line": 11,
+              "column": 18
+            }
+          },
+          "value": "コード"
+        },
+        {
+          "type": "Str",
+          "raw": "と",
+          "range": [
+            253,
+            254
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 18
+            },
+            "end": {
+              "line": 11,
+              "column": 19
+            }
+          },
+          "value": "と"
+        },
+        {
+          "type": "Emphasis",
+          "raw": "__斜体__",
+          "range": [
+            254,
+            260
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 19
+            },
+            "end": {
+              "line": 11,
+              "column": 25
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "斜体",
+              "range": [
+                256,
+                258
+              ],
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 21
+                },
+                "end": {
+                  "line": 11,
+                  "column": 23
+                }
+              },
+              "value": "斜体"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "。",
+          "range": [
+            260,
+            261
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 25
+            },
+            "end": {
+              "line": 11,
+              "column": 26
+            }
+          },
+          "value": "。"
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Constrained marks inside words like snake_case_name and a*b*c are ignored.",
+      "range": [
+        263,
+        337
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 74
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Constrained marks inside words like snake_case_name and a*b*c are ignored.",
+          "range": [
+            263,
+            337
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 0
+            },
+            "end": {
+              "line": 13,
+              "column": 74
+            }
+          },
+          "value": "Constrained marks inside words like snake_case_name and a*b*c are ignored."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Links: https://example.com, https://example.com/path[with label], link:relative/path.html[relative link], mailto:someone@example.com[mail] and <https://example.org>.",
+      "range": [
+        339,
+        504
+      ],
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 165
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Links: ",
+          "range": [
+            339,
+            346
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 0
+            },
+            "end": {
+              "line": 15,
+              "column": 7
+            }
+          },
+          "value": "Links: "
+        },
+        {
+          "type": "Link",
+          "raw": "https://example.com",
+          "range": [
+            346,
+            365
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 7
+            },
+            "end": {
+              "line": 15,
+              "column": 26
+            }
+          },
+          "url": "https://example.com",
+          "children": [
+            {
+              "type": "Str",
+              "raw": "https://example.com",
+              "range": [
+                346,
+                365
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 7
+                },
+                "end": {
+                  "line": 15,
+                  "column": 26
+                }
+              },
+              "value": "https://example.com"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": ", ",
+          "range": [
+            365,
+            367
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 26
+            },
+            "end": {
+              "line": 15,
+              "column": 28
+            }
+          },
+          "value": ", "
+        },
+        {
+          "type": "Link",
+          "raw": "https://example.com/path[with label]",
+          "range": [
+            367,
+            403
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 28
+            },
+            "end": {
+              "line": 15,
+              "column": 64
+            }
+          },
+          "url": "https://example.com/path",
+          "children": [
+            {
+              "type": "Str",
+              "raw": "with label",
+              "range": [
+                392,
+                402
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 53
+                },
+                "end": {
+                  "line": 15,
+                  "column": 63
+                }
+              },
+              "value": "with label"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": ", ",
+          "range": [
+            403,
+            405
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 64
+            },
+            "end": {
+              "line": 15,
+              "column": 66
+            }
+          },
+          "value": ", "
+        },
+        {
+          "type": "Link",
+          "raw": "link:relative/path.html[relative link]",
+          "range": [
+            405,
+            443
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 66
+            },
+            "end": {
+              "line": 15,
+              "column": 104
+            }
+          },
+          "url": "relative/path.html",
+          "children": [
+            {
+              "type": "Str",
+              "raw": "relative link",
+              "range": [
+                429,
+                442
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 90
+                },
+                "end": {
+                  "line": 15,
+                  "column": 103
+                }
+              },
+              "value": "relative link"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": ", ",
+          "range": [
+            443,
+            445
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 104
+            },
+            "end": {
+              "line": 15,
+              "column": 106
+            }
+          },
+          "value": ", "
+        },
+        {
+          "type": "Link",
+          "raw": "mailto:someone@example.com[mail]",
+          "range": [
+            445,
+            477
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 106
+            },
+            "end": {
+              "line": 15,
+              "column": 138
+            }
+          },
+          "url": "mailto:someone@example.com",
+          "children": [
+            {
+              "type": "Str",
+              "raw": "mail",
+              "range": [
+                472,
+                476
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 133
+                },
+                "end": {
+                  "line": 15,
+                  "column": 137
+                }
+              },
+              "value": "mail"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": " and <",
+          "range": [
+            477,
+            483
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 138
+            },
+            "end": {
+              "line": 15,
+              "column": 144
+            }
+          },
+          "value": " and <"
+        },
+        {
+          "type": "Link",
+          "raw": "https://example.org",
+          "range": [
+            483,
+            502
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 144
+            },
+            "end": {
+              "line": 15,
+              "column": 163
+            }
+          },
+          "url": "https://example.org",
+          "children": [
+            {
+              "type": "Str",
+              "raw": "https://example.org",
+              "range": [
+                483,
+                502
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 144
+                },
+                "end": {
+                  "line": 15,
+                  "column": 163
+                }
+              },
+              "value": "https://example.org"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": ">.",
+          "range": [
+            502,
+            504
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 163
+            },
+            "end": {
+              "line": 15,
+              "column": 165
+            }
+          },
+          "value": ">."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Macros stay in text: image:icon_file.png[Alt] footnote:[A _footnote_.] xref:other.adoc#id[Cross *ref*] <<anchor_id>> {attribute_name}.",
+      "range": [
+        506,
+        640
+      ],
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 134
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Macros stay in text: image:icon_file.png[Alt] footnote:[A _footnote_.] xref:other.adoc#id[Cross *ref*] <<anchor_id>> {attribute_name}.",
+          "range": [
+            506,
+            640
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 0
+            },
+            "end": {
+              "line": 17,
+              "column": 134
+            }
+          },
+          "value": "Macros stay in text: image:icon_file.png[Alt] footnote:[A _footnote_.] xref:other.adoc#id[Cross *ref*] <<anchor_id>> {attribute_name}."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Hard line break +\ncontinues here.",
+      "range": [
+        642,
+        675
+      ],
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 15
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Hard line break",
+          "range": [
+            642,
+            657
+          ],
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": 15
+            }
+          },
+          "value": "Hard line break"
+        },
+        {
+          "type": "Break",
+          "raw": " +",
+          "range": [
+            657,
+            659
+          ],
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 15
+            },
+            "end": {
+              "line": 19,
+              "column": 17
+            }
+          }
+        },
+        {
+          "type": "Str",
+          "raw": "\ncontinues here.",
+          "range": [
+            659,
+            675
+          ],
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 17
+            },
+            "end": {
+              "line": 20,
+              "column": 15
+            }
+          },
+          "value": "\ncontinues here."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "[.role]*Styled strong* text.",
+      "range": [
+        677,
+        705
+      ],
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 28
+        }
+      },
+      "children": [
+        {
+          "type": "Strong",
+          "raw": "[.role]*Styled strong*",
+          "range": [
+            677,
+            699
+          ],
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 0
+            },
+            "end": {
+              "line": 22,
+              "column": 22
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Styled strong",
+              "range": [
+                685,
+                698
+              ],
+              "loc": {
+                "start": {
+                  "line": 22,
+                  "column": 8
+                },
+                "end": {
+                  "line": 22,
+                  "column": 21
+                }
+              },
+              "value": "Styled strong"
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": " text.",
+          "range": [
+            699,
+            705
+          ],
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 22
+            },
+            "end": {
+              "line": 22,
+              "column": 28
+            }
+          },
+          "value": " text."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    }
+  ]
+}

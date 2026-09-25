@@ -1,0 +1,10 @@
+:product: Example Product
+
+Welcome to {product}.
+
+[#custom-id.role]
+.Block title
+Paragraph with attributes and title.
+
+[[anchor]]
+Paragraph with an anchor.

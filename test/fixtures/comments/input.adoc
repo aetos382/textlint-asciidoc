@@ -1,0 +1,39 @@
+// Line comment before paragraph.
+Paragraph text.
+// Comment inside the paragraph.
+More paragraph text.
+
+////
+Block comment.
+
+With a blank line.
+////
+
+[comment]
+This paragraph is a comment.
+
+[comment]
+--
+This open block is a comment.
+--
+
+After comments.
+
+====
+// Comment inside a delimited block.
+Example content.
+====
+
+* Item with an attached comment
++
+// Attached comment.
++
+Attached paragraph.
+
+. Item with an attached block
++
+----
+code
+----
+// Comment after the attached block.
+. Next item

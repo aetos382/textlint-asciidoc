@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+*.md text diff=markdown
+*.sh text diff=bash
+
+.editorconfig text diff=ini
+
+*-lock.json linguist-generated=true -text

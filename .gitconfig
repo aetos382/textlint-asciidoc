@@ -1,0 +1,7 @@
+# GitHub の branch ruleset で main は保護されている。
+# main への merge や main 自体の rebase などの大掛かりな操作はそっちで止める。
+# ここでは、ブランチの切り忘れというありがちなミスを早期に防止するに留める。
+
+[hook "block-commit-to-main"]
+  event = pre-commit
+  command = bash .githooks/block-commit-to-main.sh

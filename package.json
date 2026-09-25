@@ -1,0 +1,14 @@
+{
+  "name": "textlint-asciidoc",
+  "version": "0.1.0",
+  "homepage": "https://github.com/aetos382/textlint-asciidoc",
+  "bugs": {
+    "url": "https://github.com/aetos382/textlint-asciidoc/issues"
+  },
+  "repository": "github:aetos382/textlint-asciidoc",
+  "license": "MIT",
+  "author": {
+    "name": "aetos",
+    "url": "https://github.com/aetos382"
+  }
+}

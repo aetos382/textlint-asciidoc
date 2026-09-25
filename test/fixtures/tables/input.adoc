@@ -1,0 +1,35 @@
+[cols="1,1"]
+|===
+|Header 1 |Header 2
+
+|Cell *A*
+|Cell B
+
+|Multi-line
+cell
+|Last
+|===
+
+[cols="2*"]
+|===
+2+|Spanning cell
+|Left |Right \| escaped
+|===
+
+[cols="a,l"]
+|===
+|* List in cell
+
+Paragraph in cell
+|literal *cell*
+|===
+
+,===
+Name,"Quoted, value"
+Plain,Text
+,===
+
+:===
+key:value
+other:thing
+:===

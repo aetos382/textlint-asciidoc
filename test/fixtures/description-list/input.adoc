@@ -1,0 +1,10 @@
+CPU:: The brain of the computer.
+Hard drive::
+  Permanent storage.
+RAM::
+Memory::
+  Temporary storage.
++
+Attached paragraph.
+
+Question;; Answer.

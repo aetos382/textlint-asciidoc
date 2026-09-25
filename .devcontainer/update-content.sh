@@ -6,3 +6,5 @@
 set -euo pipefail
 
 bash "$(dirname "$0")/install-shellcheck.sh"
+
+npm install -g typescript-language-server

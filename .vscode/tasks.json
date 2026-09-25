@@ -1,0 +1,105 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "typecheck",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "typecheck"],
+      "group": "build",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "group": "build",
+      "problemMatcher": [
+        // dbaeumer.vscode-eslint 拡張機能が提供する problem matcher。
+        "$eslint-stylish",
+        {
+          // prettier --check は整形が必要なファイルを "[warn] <path>" の形式で出力する。
+          // 行番号は出力されないため、ファイル単位の問題として報告する。
+          "owner": "prettier",
+          "source": "prettier",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "severity": "warning",
+          "pattern": {
+            "regexp": "^\\[warn\\] (?!Code style issues )(.+)$",
+            "kind": "file",
+            "file": 1,
+            "message": 1
+          }
+        }
+      ]
+    },
+    {
+      "label": "format",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "format"],
+      "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test", "--", "--reporter=default", "--reporter=github-actions"],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        // Vitest の github-actions レポーターは、失敗したテストを
+        // "::error file=<絶対パス>,title=<テスト名>,line=<行>,column=<列>::<メッセージ>" の形式で出力する。
+        // メッセージ中の改行は %0A にエスケープされているため、1 行目のみを取り出す。
+        "owner": "vitest",
+        "source": "vitest",
+        "fileLocation": "absolute",
+        "severity": "error",
+        "pattern": {
+          "regexp": "^::error file=([^,]+),title=([^,]*),line=(\\d+),column=(\\d+)::(.*?)(?:%0A.*)?$",
+          "file": 1,
+          "code": 2,
+          "line": 3,
+          "column": 4,
+          "message": 5
+        }
+      }
+    },
+    {
+      "label": "update-snapshot",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "update-snapshot", "--", "--reporter=default", "--reporter=github-actions"],
+      "group": "test",
+      "problemMatcher": {
+        // test タスクと同じ。
+        "owner": "vitest",
+        "source": "vitest",
+        "fileLocation": "absolute",
+        "severity": "error",
+        "pattern": {
+          "regexp": "^::error file=([^,]+),title=([^,]*),line=(\\d+),column=(\\d+)::(.*?)(?:%0A.*)?$",
+          "file": 1,
+          "code": 2,
+          "line": 3,
+          "column": 4,
+          "message": 5
+        }
+      }
+    }
+  ]
+}

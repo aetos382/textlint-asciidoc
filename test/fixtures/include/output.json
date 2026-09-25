@@ -1,0 +1,104 @@
+{
+  "type": "Document",
+  "raw": "Before include.\n\ninclude::missing-file.adoc[]\n\ninclude::other.adoc[lines=1..5]\n\nAfter include.\n",
+  "range": [
+    0,
+    95
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 8,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Paragraph",
+      "raw": "Before include.",
+      "range": [
+        0,
+        15
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 15
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Before include.",
+          "range": [
+            0,
+            15
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 15
+            }
+          },
+          "value": "Before include."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "After include.",
+      "range": [
+        80,
+        94
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 14
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "After include.",
+          "range": [
+            80,
+            94
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 14
+            }
+          },
+          "value": "After include."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    }
+  ]
+}

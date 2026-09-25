@@ -1,0 +1,701 @@
+{
+  "type": "Document",
+  "raw": "// Line comment before paragraph.\nParagraph text.\n// Comment inside the paragraph.\nMore paragraph text.\n\n////\nBlock comment.\n\nWith a blank line.\n////\n\n[comment]\nThis paragraph is a comment.\n\n[comment]\n--\nThis open block is a comment.\n--\n\nAfter comments.\n\n====\n// Comment inside a delimited block.\nExample content.\n====\n\n* Item with an attached comment\n+\n// Attached comment.\n+\nAttached paragraph.\n\n. Item with an attached block\n+\n----\ncode\n----\n// Comment after the attached block.\n. Next item\n",
+  "range": [
+    0,
+    494
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 40,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Comment",
+      "raw": "// Line comment before paragraph.",
+      "range": [
+        0,
+        33
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 33
+        }
+      },
+      "value": " Line comment before paragraph."
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Paragraph text.\n// Comment inside the paragraph.\nMore paragraph text.",
+      "range": [
+        34,
+        103
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 20
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Paragraph text.",
+          "range": [
+            34,
+            49
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 15
+            }
+          },
+          "value": "Paragraph text."
+        },
+        {
+          "type": "Comment",
+          "raw": "// Comment inside the paragraph.",
+          "range": [
+            50,
+            82
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 32
+            }
+          },
+          "value": " Comment inside the paragraph."
+        },
+        {
+          "type": "Str",
+          "raw": "More paragraph text.",
+          "range": [
+            83,
+            103
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 20
+            }
+          },
+          "value": "More paragraph text."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Comment",
+      "raw": "////\nBlock comment.\n\nWith a blank line.\n////",
+      "range": [
+        105,
+        149
+      ],
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 4
+        }
+      },
+      "value": "Block comment.\n\nWith a blank line."
+    },
+    {
+      "type": "Comment",
+      "raw": "This paragraph is a comment.",
+      "range": [
+        161,
+        189
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 28
+        }
+      },
+      "value": "This paragraph is a comment."
+    },
+    {
+      "type": "Comment",
+      "raw": "--\nThis open block is a comment.\n--",
+      "range": [
+        201,
+        236
+      ],
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 2
+        }
+      },
+      "value": "This open block is a comment."
+    },
+    {
+      "type": "Paragraph",
+      "raw": "After comments.",
+      "range": [
+        238,
+        253
+      ],
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 15
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "After comments.",
+          "range": [
+            238,
+            253
+          ],
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 0
+            },
+            "end": {
+              "line": 20,
+              "column": 15
+            }
+          },
+          "value": "After comments."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "====\n// Comment inside a delimited block.\nExample content.\n====",
+      "range": [
+        255,
+        318
+      ],
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 0
+        },
+        "end": {
+          "line": 25,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "// Comment inside a delimited block.",
+          "range": [
+            260,
+            296
+          ],
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 0
+            },
+            "end": {
+              "line": 23,
+              "column": 36
+            }
+          },
+          "children": [
+            {
+              "type": "Comment",
+              "raw": "// Comment inside a delimited block.",
+              "range": [
+                260,
+                296
+              ],
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 0
+                },
+                "end": {
+                  "line": 23,
+                  "column": 36
+                }
+              },
+              "value": " Comment inside a delimited block."
+            }
+          ],
+          "asciidoc": {
+            "context": "comment"
+          }
+        },
+        {
+          "type": "Paragraph",
+          "raw": "Example content.",
+          "range": [
+            297,
+            313
+          ],
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 0
+            },
+            "end": {
+              "line": 24,
+              "column": 16
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Example content.",
+              "range": [
+                297,
+                313
+              ],
+              "loc": {
+                "start": {
+                  "line": 24,
+                  "column": 0
+                },
+                "end": {
+                  "line": 24,
+                  "column": 16
+                }
+              },
+              "value": "Example content."
+            }
+          ],
+          "asciidoc": {
+            "context": "paragraph"
+          }
+        }
+      ],
+      "asciidoc": {
+        "context": "example",
+        "style": "example"
+      }
+    },
+    {
+      "type": "List",
+      "raw": "* Item with an attached comment\n+\n// Attached comment.\n+\nAttached paragraph.\n\n. Item with an attached block\n+\n----\ncode\n----\n// Comment after the attached block.\n. Next item",
+      "range": [
+        320,
+        493
+      ],
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 0
+        },
+        "end": {
+          "line": 39,
+          "column": 11
+        }
+      },
+      "ordered": false,
+      "children": [
+        {
+          "type": "ListItem",
+          "raw": "* Item with an attached comment\n+\n// Attached comment.\n+\nAttached paragraph.\n\n. Item with an attached block\n+\n----\ncode\n----\n// Comment after the attached block.\n. Next item",
+          "range": [
+            320,
+            493
+          ],
+          "loc": {
+            "start": {
+              "line": 27,
+              "column": 0
+            },
+            "end": {
+              "line": 39,
+              "column": 11
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Item with an attached comment",
+              "range": [
+                322,
+                351
+              ],
+              "loc": {
+                "start": {
+                  "line": 27,
+                  "column": 2
+                },
+                "end": {
+                  "line": 27,
+                  "column": 31
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Item with an attached comment",
+                  "range": [
+                    322,
+                    351
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 27,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 27,
+                      "column": 31
+                    }
+                  },
+                  "value": "Item with an attached comment"
+                }
+              ]
+            },
+            {
+              "type": "Paragraph",
+              "raw": "// Attached comment.",
+              "range": [
+                354,
+                374
+              ],
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 0
+                },
+                "end": {
+                  "line": 29,
+                  "column": 20
+                }
+              },
+              "children": [
+                {
+                  "type": "Comment",
+                  "raw": "// Attached comment.",
+                  "range": [
+                    354,
+                    374
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 29,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 29,
+                      "column": 20
+                    }
+                  },
+                  "value": " Attached comment."
+                }
+              ],
+              "asciidoc": {
+                "context": "comment"
+              }
+            },
+            {
+              "type": "Paragraph",
+              "raw": "Attached paragraph.",
+              "range": [
+                377,
+                396
+              ],
+              "loc": {
+                "start": {
+                  "line": 31,
+                  "column": 0
+                },
+                "end": {
+                  "line": 31,
+                  "column": 19
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Attached paragraph.",
+                  "range": [
+                    377,
+                    396
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 19
+                    }
+                  },
+                  "value": "Attached paragraph."
+                }
+              ],
+              "asciidoc": {
+                "context": "paragraph"
+              }
+            },
+            {
+              "type": "List",
+              "raw": ". Item with an attached block\n+\n----\ncode\n----\n// Comment after the attached block.\n. Next item",
+              "range": [
+                398,
+                493
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 0
+                },
+                "end": {
+                  "line": 39,
+                  "column": 11
+                }
+              },
+              "ordered": true,
+              "children": [
+                {
+                  "type": "ListItem",
+                  "raw": ". Item with an attached block\n+\n----\ncode\n----\n// Comment after the attached block.",
+                  "range": [
+                    398,
+                    481
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 38,
+                      "column": 36
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Item with an attached block",
+                      "range": [
+                        400,
+                        427
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 33,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 33,
+                          "column": 29
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Item with an attached block",
+                          "range": [
+                            400,
+                            427
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 33,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 33,
+                              "column": 29
+                            }
+                          },
+                          "value": "Item with an attached block"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "CodeBlock",
+                      "raw": "----\ncode\n----",
+                      "range": [
+                        430,
+                        444
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 35,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 37,
+                          "column": 4
+                        }
+                      },
+                      "value": "code",
+                      "asciidoc": {
+                        "context": "listing",
+                        "style": "listing"
+                      }
+                    },
+                    {
+                      "type": "Paragraph",
+                      "raw": "// Comment after the attached block.",
+                      "range": [
+                        445,
+                        481
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 38,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 38,
+                          "column": 36
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Comment",
+                          "raw": "// Comment after the attached block.",
+                          "range": [
+                            445,
+                            481
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 38,
+                              "column": 0
+                            },
+                            "end": {
+                              "line": 38,
+                              "column": 36
+                            }
+                          },
+                          "value": " Comment after the attached block."
+                        }
+                      ],
+                      "asciidoc": {
+                        "context": "comment"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "raw": ". Next item",
+                  "range": [
+                    482,
+                    493
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 39,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 39,
+                      "column": 11
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Next item",
+                      "range": [
+                        484,
+                        493
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 11
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Next item",
+                          "range": [
+                            484,
+                            493
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 39,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 39,
+                              "column": 11
+                            }
+                          },
+                          "value": "Next item"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "asciidoc": {
+                "context": "olist",
+                "style": "arabic"
+              }
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "ulist"
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "type": "Document",
+  "raw": ":product: Example Product\n\nWelcome to {product}.\n\n[#custom-id.role]\n.Block title\nParagraph with attributes and title.\n\n[[anchor]]\nParagraph with an anchor.\n",
+  "range": [
+    0,
+    156
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 11,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Paragraph",
+      "raw": "Welcome to {product}.",
+      "range": [
+        27,
+        48
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 21
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Welcome to {product}.",
+          "range": [
+            27,
+            48
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 21
+            }
+          },
+          "value": "Welcome to {product}."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Paragraph with attributes and title.",
+      "range": [
+        81,
+        117
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 36
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Paragraph with attributes and title.",
+          "range": [
+            81,
+            117
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 36
+            }
+          },
+          "value": "Paragraph with attributes and title."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "Paragraph with an anchor.",
+      "range": [
+        130,
+        155
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 25
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "Paragraph with an anchor.",
+          "range": [
+            130,
+            155
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 25
+            }
+          },
+          "value": "Paragraph with an anchor."
+        }
+      ],
+      "asciidoc": {
+        "context": "paragraph"
+      }
+    }
+  ]
+}

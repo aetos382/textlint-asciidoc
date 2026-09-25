@@ -1,0 +1,1226 @@
+{
+  "type": "Document",
+  "raw": "[cols=\"1,1\"]\n|===\n|Header 1 |Header 2\n\n|Cell *A*\n|Cell B\n\n|Multi-line\ncell\n|Last\n|===\n\n[cols=\"2*\"]\n|===\n2+|Spanning cell\n|Left |Right \\| escaped\n|===\n\n[cols=\"a,l\"]\n|===\n|* List in cell\n\nParagraph in cell\n|literal *cell*\n|===\n\n,===\nName,\"Quoted, value\"\nPlain,Text\n,===\n\n:===\nkey:value\nother:thing\n:===\n",
+  "range": [
+    0,
+    301
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 36,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Table",
+      "raw": "|===\n|Header 1 |Header 2\n\n|Cell *A*\n|Cell B\n\n|Multi-line\ncell\n|Last\n|===",
+      "range": [
+        13,
+        85
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "|Header 1 |Header 2",
+          "range": [
+            18,
+            37
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 19
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Header 1",
+              "range": [
+                19,
+                27
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 1
+                },
+                "end": {
+                  "line": 3,
+                  "column": 9
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Header 1",
+                  "range": [
+                    19,
+                    27
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 9
+                    }
+                  },
+                  "value": "Header 1"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Header 2",
+              "range": [
+                29,
+                37
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 11
+                },
+                "end": {
+                  "line": 3,
+                  "column": 19
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Header 2",
+                  "range": [
+                    29,
+                    37
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 19
+                    }
+                  },
+                  "value": "Header 2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "|Cell *A*\n|Cell B",
+          "range": [
+            39,
+            56
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 0
+            },
+            "end": {
+              "line": 6,
+              "column": 7
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Cell *A*",
+              "range": [
+                40,
+                48
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 1
+                },
+                "end": {
+                  "line": 5,
+                  "column": 9
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Cell ",
+                  "range": [
+                    40,
+                    45
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 6
+                    }
+                  },
+                  "value": "Cell "
+                },
+                {
+                  "type": "Strong",
+                  "raw": "*A*",
+                  "range": [
+                    45,
+                    48
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 9
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "A",
+                      "range": [
+                        46,
+                        47
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 7
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 8
+                        }
+                      },
+                      "value": "A"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Cell B",
+              "range": [
+                50,
+                56
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 1
+                },
+                "end": {
+                  "line": 6,
+                  "column": 7
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Cell B",
+                  "range": [
+                    50,
+                    56
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 7
+                    }
+                  },
+                  "value": "Cell B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "|Multi-line\ncell\n|Last",
+          "range": [
+            58,
+            80
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 5
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Multi-line\ncell",
+              "range": [
+                59,
+                74
+              ],
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 1
+                },
+                "end": {
+                  "line": 9,
+                  "column": 4
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Multi-line\ncell",
+                  "range": [
+                    59,
+                    74
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 4
+                    }
+                  },
+                  "value": "Multi-line\ncell"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Last",
+              "range": [
+                76,
+                80
+              ],
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 1
+                },
+                "end": {
+                  "line": 10,
+                  "column": 5
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Last",
+                  "range": [
+                    76,
+                    80
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 5
+                    }
+                  },
+                  "value": "Last"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\n2+|Spanning cell\n|Left |Right \\| escaped\n|===",
+      "range": [
+        99,
+        149
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "2+|Spanning cell",
+          "range": [
+            104,
+            120
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 0
+            },
+            "end": {
+              "line": 15,
+              "column": 16
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Spanning cell",
+              "range": [
+                107,
+                120
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 3
+                },
+                "end": {
+                  "line": 15,
+                  "column": 16
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Spanning cell",
+                  "range": [
+                    107,
+                    120
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 16
+                    }
+                  },
+                  "value": "Spanning cell"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "|Left |Right \\| escaped",
+          "range": [
+            121,
+            144
+          ],
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 23
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Left",
+              "range": [
+                122,
+                126
+              ],
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 1
+                },
+                "end": {
+                  "line": 16,
+                  "column": 5
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Left",
+                  "range": [
+                    122,
+                    126
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 5
+                    }
+                  },
+                  "value": "Left"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Right \\| escaped",
+              "range": [
+                128,
+                144
+              ],
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 7
+                },
+                "end": {
+                  "line": 16,
+                  "column": 23
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Right \\| escaped",
+                  "range": [
+                    128,
+                    144
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 23
+                    }
+                  },
+                  "value": "Right \\| escaped"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": "|===\n|* List in cell\n\nParagraph in cell\n|literal *cell*\n|===",
+      "range": [
+        164,
+        224
+      ],
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 25,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "|* List in cell\n\nParagraph in cell\n|literal *cell*",
+          "range": [
+            169,
+            219
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 24,
+              "column": 15
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "* List in cell\n\nParagraph in cell",
+              "range": [
+                170,
+                203
+              ],
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 1
+                },
+                "end": {
+                  "line": 23,
+                  "column": 17
+                }
+              },
+              "children": [
+                {
+                  "type": "List",
+                  "raw": "* List in cell",
+                  "range": [
+                    170,
+                    184
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 15
+                    }
+                  },
+                  "ordered": false,
+                  "children": [
+                    {
+                      "type": "ListItem",
+                      "raw": "* List in cell",
+                      "range": [
+                        170,
+                        184
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 21,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 21,
+                          "column": 15
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Paragraph",
+                          "raw": "List in cell",
+                          "range": [
+                            172,
+                            184
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 21,
+                              "column": 3
+                            },
+                            "end": {
+                              "line": 21,
+                              "column": 15
+                            }
+                          },
+                          "children": [
+                            {
+                              "type": "Str",
+                              "raw": "List in cell",
+                              "range": [
+                                172,
+                                184
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 3
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 15
+                                }
+                              },
+                              "value": "List in cell"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "asciidoc": {
+                    "context": "ulist"
+                  }
+                },
+                {
+                  "type": "Paragraph",
+                  "raw": "Paragraph in cell",
+                  "range": [
+                    186,
+                    203
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 17
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "Paragraph in cell",
+                      "range": [
+                        186,
+                        203
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 17
+                        }
+                      },
+                      "value": "Paragraph in cell"
+                    }
+                  ],
+                  "asciidoc": {
+                    "context": "paragraph"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "literal *cell*",
+              "range": [
+                205,
+                219
+              ],
+              "loc": {
+                "start": {
+                  "line": 24,
+                  "column": 1
+                },
+                "end": {
+                  "line": 24,
+                  "column": 15
+                }
+              },
+              "children": [
+                {
+                  "type": "Code",
+                  "raw": "literal *cell*",
+                  "range": [
+                    205,
+                    219
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 24,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 15
+                    }
+                  },
+                  "value": "literal *cell*"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": ",===\nName,\"Quoted, value\"\nPlain,Text\n,===",
+      "range": [
+        226,
+        267
+      ],
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 0
+        },
+        "end": {
+          "line": 30,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "Name,\"Quoted, value\"",
+          "range": [
+            231,
+            251
+          ],
+          "loc": {
+            "start": {
+              "line": 28,
+              "column": 0
+            },
+            "end": {
+              "line": 28,
+              "column": 20
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Name",
+              "range": [
+                231,
+                235
+              ],
+              "loc": {
+                "start": {
+                  "line": 28,
+                  "column": 0
+                },
+                "end": {
+                  "line": 28,
+                  "column": 4
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Name",
+                  "range": [
+                    231,
+                    235
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 28,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 28,
+                      "column": 4
+                    }
+                  },
+                  "value": "Name"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Quoted, value",
+              "range": [
+                237,
+                250
+              ],
+              "loc": {
+                "start": {
+                  "line": 28,
+                  "column": 6
+                },
+                "end": {
+                  "line": 28,
+                  "column": 19
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Quoted, value",
+                  "range": [
+                    237,
+                    250
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 28,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 28,
+                      "column": 19
+                    }
+                  },
+                  "value": "Quoted, value"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "Plain,Text",
+          "range": [
+            252,
+            262
+          ],
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 0
+            },
+            "end": {
+              "line": 29,
+              "column": 10
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "Plain",
+              "range": [
+                252,
+                257
+              ],
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 0
+                },
+                "end": {
+                  "line": 29,
+                  "column": 5
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Plain",
+                  "range": [
+                    252,
+                    257
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 29,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 29,
+                      "column": 5
+                    }
+                  },
+                  "value": "Plain"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "Text",
+              "range": [
+                258,
+                262
+              ],
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 6
+                },
+                "end": {
+                  "line": 29,
+                  "column": 10
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Text",
+                  "range": [
+                    258,
+                    262
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 29,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 29,
+                      "column": 10
+                    }
+                  },
+                  "value": "Text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    },
+    {
+      "type": "Table",
+      "raw": ":===\nkey:value\nother:thing\n:===",
+      "range": [
+        269,
+        300
+      ],
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "TableRow",
+          "raw": "key:value",
+          "range": [
+            274,
+            283
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 0
+            },
+            "end": {
+              "line": 33,
+              "column": 9
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "key",
+              "range": [
+                274,
+                277
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 0
+                },
+                "end": {
+                  "line": 33,
+                  "column": 3
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "key",
+                  "range": [
+                    274,
+                    277
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 3
+                    }
+                  },
+                  "value": "key"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "value",
+              "range": [
+                278,
+                283
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 4
+                },
+                "end": {
+                  "line": 33,
+                  "column": 9
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "value",
+                  "range": [
+                    278,
+                    283
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 9
+                    }
+                  },
+                  "value": "value"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TableRow",
+          "raw": "other:thing",
+          "range": [
+            284,
+            295
+          ],
+          "loc": {
+            "start": {
+              "line": 34,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 11
+            }
+          },
+          "children": [
+            {
+              "type": "TableCell",
+              "raw": "other",
+              "range": [
+                284,
+                289
+              ],
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 0
+                },
+                "end": {
+                  "line": 34,
+                  "column": 5
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "other",
+                  "range": [
+                    284,
+                    289
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 5
+                    }
+                  },
+                  "value": "other"
+                }
+              ]
+            },
+            {
+              "type": "TableCell",
+              "raw": "thing",
+              "range": [
+                290,
+                295
+              ],
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 6
+                },
+                "end": {
+                  "line": 34,
+                  "column": 11
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "thing",
+                  "range": [
+                    290,
+                    295
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 11
+                    }
+                  },
+                  "value": "thing"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "table",
+        "style": "table"
+      }
+    }
+  ]
+}

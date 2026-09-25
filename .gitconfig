@@ -5,3 +5,8 @@
 [hook "block-commit-to-main"]
   event = pre-commit
   command = bash .githooks/block-commit-to-main.sh
+
+# 整形漏れは CI の npm run lint でも検出されるが、push する前に気付けるようにする。
+[hook "prettier-check"]
+  event = pre-commit
+  command = bash .githooks/prettier-check.sh

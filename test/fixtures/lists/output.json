@@ -1,0 +1,759 @@
+{
+  "type": "Document",
+  "raw": "* Unordered item\ncontinued on the next line.\n** Nested item\n* [x] Checked item\n* [ ] Unchecked item\n\n. Ordered one\n. Ordered two\n+\nAttached paragraph.\n+\n----\nattached listing\n----\n. Ordered three\n\n// Comment between lists.\n\n- Dash item\n\n<1> Callout text.\n",
+  "range": [
+    0,
+    255
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 22,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "List",
+      "raw": "* Unordered item\ncontinued on the next line.\n** Nested item\n* [x] Checked item\n* [ ] Unchecked item\n\n. Ordered one\n. Ordered two\n+\nAttached paragraph.\n+\n----\nattached listing\n----\n. Ordered three",
+      "range": [
+        0,
+        195
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 15
+        }
+      },
+      "ordered": false,
+      "children": [
+        {
+          "type": "ListItem",
+          "raw": "* Unordered item\ncontinued on the next line.\n** Nested item",
+          "range": [
+            0,
+            59
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 14
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Unordered item\ncontinued on the next line.",
+              "range": [
+                2,
+                44
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 2
+                },
+                "end": {
+                  "line": 2,
+                  "column": 27
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Unordered item\ncontinued on the next line.",
+                  "range": [
+                    2,
+                    44
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 27
+                    }
+                  },
+                  "value": "Unordered item\ncontinued on the next line."
+                }
+              ]
+            },
+            {
+              "type": "List",
+              "raw": "** Nested item",
+              "range": [
+                45,
+                59
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 0
+                },
+                "end": {
+                  "line": 3,
+                  "column": 14
+                }
+              },
+              "ordered": false,
+              "children": [
+                {
+                  "type": "ListItem",
+                  "raw": "** Nested item",
+                  "range": [
+                    45,
+                    59
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 14
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Nested item",
+                      "range": [
+                        48,
+                        59
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 3
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 14
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Nested item",
+                          "range": [
+                            48,
+                            59
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 3,
+                              "column": 3
+                            },
+                            "end": {
+                              "line": 3,
+                              "column": 14
+                            }
+                          },
+                          "value": "Nested item"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "asciidoc": {
+                "context": "ulist"
+              }
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "raw": "* [x] Checked item",
+          "range": [
+            60,
+            78
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 18
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Checked item",
+              "range": [
+                66,
+                78
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 6
+                },
+                "end": {
+                  "line": 4,
+                  "column": 18
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Checked item",
+                  "range": [
+                    66,
+                    78
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 18
+                    }
+                  },
+                  "value": "Checked item"
+                }
+              ]
+            }
+          ],
+          "checked": true
+        },
+        {
+          "type": "ListItem",
+          "raw": "* [ ] Unchecked item\n\n. Ordered one\n. Ordered two\n+\nAttached paragraph.\n+\n----\nattached listing\n----\n. Ordered three",
+          "range": [
+            79,
+            195
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 0
+            },
+            "end": {
+              "line": 15,
+              "column": 15
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Unchecked item",
+              "range": [
+                85,
+                99
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 6
+                },
+                "end": {
+                  "line": 5,
+                  "column": 20
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Unchecked item",
+                  "range": [
+                    85,
+                    99
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 20
+                    }
+                  },
+                  "value": "Unchecked item"
+                }
+              ]
+            },
+            {
+              "type": "List",
+              "raw": ". Ordered one\n. Ordered two\n+\nAttached paragraph.\n+\n----\nattached listing\n----\n. Ordered three",
+              "range": [
+                101,
+                195
+              ],
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 0
+                },
+                "end": {
+                  "line": 15,
+                  "column": 15
+                }
+              },
+              "ordered": true,
+              "children": [
+                {
+                  "type": "ListItem",
+                  "raw": ". Ordered one",
+                  "range": [
+                    101,
+                    114
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 13
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Ordered one",
+                      "range": [
+                        103,
+                        114
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 7,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 7,
+                          "column": 13
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Ordered one",
+                          "range": [
+                            103,
+                            114
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 7,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 7,
+                              "column": 13
+                            }
+                          },
+                          "value": "Ordered one"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "raw": ". Ordered two\n+\nAttached paragraph.\n+\n----\nattached listing\n----",
+                  "range": [
+                    115,
+                    179
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 4
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Ordered two",
+                      "range": [
+                        117,
+                        128
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 8,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 8,
+                          "column": 13
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Ordered two",
+                          "range": [
+                            117,
+                            128
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 8,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 8,
+                              "column": 13
+                            }
+                          },
+                          "value": "Ordered two"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Paragraph",
+                      "raw": "Attached paragraph.",
+                      "range": [
+                        131,
+                        150
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 19
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Attached paragraph.",
+                          "range": [
+                            131,
+                            150
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 10,
+                              "column": 0
+                            },
+                            "end": {
+                              "line": 10,
+                              "column": 19
+                            }
+                          },
+                          "value": "Attached paragraph."
+                        }
+                      ],
+                      "asciidoc": {
+                        "context": "paragraph"
+                      }
+                    },
+                    {
+                      "type": "CodeBlock",
+                      "raw": "----\nattached listing\n----",
+                      "range": [
+                        153,
+                        179
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 4
+                        }
+                      },
+                      "value": "attached listing",
+                      "asciidoc": {
+                        "context": "listing",
+                        "style": "listing"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "raw": ". Ordered three",
+                  "range": [
+                    180,
+                    195
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 15
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Paragraph",
+                      "raw": "Ordered three",
+                      "range": [
+                        182,
+                        195
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 15
+                        }
+                      },
+                      "children": [
+                        {
+                          "type": "Str",
+                          "raw": "Ordered three",
+                          "range": [
+                            182,
+                            195
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 15
+                            }
+                          },
+                          "value": "Ordered three"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "asciidoc": {
+                "context": "olist",
+                "style": "arabic"
+              }
+            }
+          ],
+          "checked": false
+        }
+      ],
+      "asciidoc": {
+        "context": "ulist"
+      }
+    },
+    {
+      "type": "Comment",
+      "raw": "// Comment between lists.",
+      "range": [
+        197,
+        222
+      ],
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 25
+        }
+      },
+      "value": " Comment between lists."
+    },
+    {
+      "type": "List",
+      "raw": "- Dash item",
+      "range": [
+        224,
+        235
+      ],
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 11
+        }
+      },
+      "ordered": false,
+      "children": [
+        {
+          "type": "ListItem",
+          "raw": "- Dash item",
+          "range": [
+            224,
+            235
+          ],
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": 11
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Dash item",
+              "range": [
+                226,
+                235
+              ],
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 2
+                },
+                "end": {
+                  "line": 19,
+                  "column": 11
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Dash item",
+                  "range": [
+                    226,
+                    235
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 19,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 11
+                    }
+                  },
+                  "value": "Dash item"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "ulist"
+      }
+    },
+    {
+      "type": "List",
+      "raw": "<1> Callout text.",
+      "range": [
+        237,
+        254
+      ],
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 17
+        }
+      },
+      "ordered": false,
+      "children": [
+        {
+          "type": "ListItem",
+          "raw": "<1> Callout text.",
+          "range": [
+            237,
+            254
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 21,
+              "column": 17
+            }
+          },
+          "children": [
+            {
+              "type": "Paragraph",
+              "raw": "Callout text.",
+              "range": [
+                241,
+                254
+              ],
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 4
+                },
+                "end": {
+                  "line": 21,
+                  "column": 17
+                }
+              },
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "Callout text.",
+                  "range": [
+                    241,
+                    254
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 17
+                    }
+                  },
+                  "value": "Callout text."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "colist",
+        "style": "arabic"
+      }
+    }
+  ]
+}

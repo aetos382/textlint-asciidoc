@@ -1,0 +1,706 @@
+{
+  "type": "Document",
+  "raw": "NOTE: One-line admonition.\n\n[TIP]\nParagraph-style admonition.\n\n[WARNING]\n====\nDelimited admonition.\n\n* with a list\n====\n\n.Sidebar title\n****\nSidebar content.\n****\n\n====\nExample content.\n====\n\n--\nOpen block content.\n--\n\n[quote, Someone, Somewhere]\n____\nQuoted text.\n____\n\n[verse, Poet]\n____\nVerse line one\nverse line two\n____\n\n[quote]\nQuoted paragraph.\n\n'''\n\n<<<\n\nimage::diagram.png[Diagram]\n\ntoc::[]\n",
+  "range": [
+    0,
+    400
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 47,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "BlockQuote",
+      "raw": "NOTE: One-line admonition.",
+      "range": [
+        0,
+        26
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 26
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "One-line admonition.",
+          "range": [
+            6,
+            26
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 6
+            },
+            "end": {
+              "line": 1,
+              "column": 26
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "One-line admonition.",
+              "range": [
+                6,
+                26
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 6
+                },
+                "end": {
+                  "line": 1,
+                  "column": 26
+                }
+              },
+              "value": "One-line admonition."
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "admonition",
+        "style": "NOTE"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "Paragraph-style admonition.",
+      "range": [
+        34,
+        61
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 27
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Paragraph-style admonition.",
+          "range": [
+            34,
+            61
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 27
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Paragraph-style admonition.",
+              "range": [
+                34,
+                61
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 4,
+                  "column": 27
+                }
+              },
+              "value": "Paragraph-style admonition."
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "admonition",
+        "style": "TIP"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "====\nDelimited admonition.\n\n* with a list\n====",
+      "range": [
+        73,
+        119
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Delimited admonition.",
+          "range": [
+            78,
+            99
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 0
+            },
+            "end": {
+              "line": 8,
+              "column": 21
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Delimited admonition.",
+              "range": [
+                78,
+                99
+              ],
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 0
+                },
+                "end": {
+                  "line": 8,
+                  "column": 21
+                }
+              },
+              "value": "Delimited admonition."
+            }
+          ],
+          "asciidoc": {
+            "context": "paragraph"
+          }
+        },
+        {
+          "type": "List",
+          "raw": "* with a list",
+          "range": [
+            101,
+            114
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 13
+            }
+          },
+          "ordered": false,
+          "children": [
+            {
+              "type": "ListItem",
+              "raw": "* with a list",
+              "range": [
+                101,
+                114
+              ],
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 0
+                },
+                "end": {
+                  "line": 10,
+                  "column": 13
+                }
+              },
+              "children": [
+                {
+                  "type": "Paragraph",
+                  "raw": "with a list",
+                  "range": [
+                    103,
+                    114
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 13
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "with a list",
+                      "range": [
+                        103,
+                        114
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 13
+                        }
+                      },
+                      "value": "with a list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "asciidoc": {
+            "context": "ulist"
+          }
+        }
+      ],
+      "asciidoc": {
+        "context": "admonition",
+        "style": "WARNING"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "****\nSidebar content.\n****",
+      "range": [
+        136,
+        162
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Sidebar content.",
+          "range": [
+            141,
+            157
+          ],
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 0
+            },
+            "end": {
+              "line": 15,
+              "column": 16
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Sidebar content.",
+              "range": [
+                141,
+                157
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 0
+                },
+                "end": {
+                  "line": 15,
+                  "column": 16
+                }
+              },
+              "value": "Sidebar content."
+            }
+          ],
+          "asciidoc": {
+            "context": "paragraph"
+          }
+        }
+      ],
+      "asciidoc": {
+        "context": "sidebar",
+        "style": "sidebar"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "====\nExample content.\n====",
+      "range": [
+        164,
+        190
+      ],
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Example content.",
+          "range": [
+            169,
+            185
+          ],
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 0
+            },
+            "end": {
+              "line": 19,
+              "column": 16
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Example content.",
+              "range": [
+                169,
+                185
+              ],
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 0
+                },
+                "end": {
+                  "line": 19,
+                  "column": 16
+                }
+              },
+              "value": "Example content."
+            }
+          ],
+          "asciidoc": {
+            "context": "paragraph"
+          }
+        }
+      ],
+      "asciidoc": {
+        "context": "example",
+        "style": "example"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "--\nOpen block content.\n--",
+      "range": [
+        192,
+        217
+      ],
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 0
+        },
+        "end": {
+          "line": 24,
+          "column": 2
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Open block content.",
+          "range": [
+            195,
+            214
+          ],
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 0
+            },
+            "end": {
+              "line": 23,
+              "column": 19
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Open block content.",
+              "range": [
+                195,
+                214
+              ],
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 0
+                },
+                "end": {
+                  "line": 23,
+                  "column": 19
+                }
+              },
+              "value": "Open block content."
+            }
+          ],
+          "asciidoc": {
+            "context": "paragraph"
+          }
+        }
+      ],
+      "asciidoc": {
+        "context": "open",
+        "style": "open"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "____\nQuoted text.\n____",
+      "range": [
+        247,
+        269
+      ],
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 0
+        },
+        "end": {
+          "line": 29,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Quoted text.",
+          "range": [
+            252,
+            264
+          ],
+          "loc": {
+            "start": {
+              "line": 28,
+              "column": 0
+            },
+            "end": {
+              "line": 28,
+              "column": 12
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Quoted text.",
+              "range": [
+                252,
+                264
+              ],
+              "loc": {
+                "start": {
+                  "line": 28,
+                  "column": 0
+                },
+                "end": {
+                  "line": 28,
+                  "column": 12
+                }
+              },
+              "value": "Quoted text."
+            }
+          ],
+          "asciidoc": {
+            "context": "paragraph"
+          }
+        }
+      ],
+      "asciidoc": {
+        "context": "quote",
+        "style": "quote"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "____\nVerse line one\nverse line two\n____",
+      "range": [
+        285,
+        324
+      ],
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 4
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Verse line one\nverse line two",
+          "range": [
+            290,
+            319
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 14
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Verse line one\nverse line two",
+              "range": [
+                290,
+                319
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 0
+                },
+                "end": {
+                  "line": 34,
+                  "column": 14
+                }
+              },
+              "value": "Verse line one\nverse line two"
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "verse",
+        "style": "verse"
+      }
+    },
+    {
+      "type": "BlockQuote",
+      "raw": "Quoted paragraph.",
+      "range": [
+        334,
+        351
+      ],
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 38,
+          "column": 17
+        }
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "raw": "Quoted paragraph.",
+          "range": [
+            334,
+            351
+          ],
+          "loc": {
+            "start": {
+              "line": 38,
+              "column": 0
+            },
+            "end": {
+              "line": 38,
+              "column": 17
+            }
+          },
+          "children": [
+            {
+              "type": "Str",
+              "raw": "Quoted paragraph.",
+              "range": [
+                334,
+                351
+              ],
+              "loc": {
+                "start": {
+                  "line": 38,
+                  "column": 0
+                },
+                "end": {
+                  "line": 38,
+                  "column": 17
+                }
+              },
+              "value": "Quoted paragraph."
+            }
+          ]
+        }
+      ],
+      "asciidoc": {
+        "context": "quote",
+        "style": "quote"
+      }
+    },
+    {
+      "type": "HorizontalRule",
+      "raw": "'''",
+      "range": [
+        353,
+        356
+      ],
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 0
+        },
+        "end": {
+          "line": 40,
+          "column": 3
+        }
+      },
+      "asciidoc": {
+        "context": "thematic_break"
+      }
+    }
+  ]
+}

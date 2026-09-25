@@ -1,0 +1,22 @@
+Plain *strong* and _emphasis_ and `code` text.
+
+Unconstrained **st**rong, __em__phasis and ``co``de.
+
+Nested *strong with _emphasis_ inside*.
+
+Literal monospace `+*not strong*+` stays code.
+
+Escaped \*not strong* and \_not emphasis_.
+
+日本語の**強調**と``コード``と__斜体__。
+
+Constrained marks inside words like snake_case_name and a*b*c are ignored.
+
+Links: https://example.com, https://example.com/path[with label], link:relative/path.html[relative link], mailto:someone@example.com[mail] and <https://example.org>.
+
+Macros stay in text: image:icon_file.png[Alt] footnote:[A _footnote_.] xref:other.adoc#id[Cross *ref*] <<anchor_id>> {attribute_name}.
+
+Hard line break +
+continues here.
+
+[.role]*Styled strong* text.

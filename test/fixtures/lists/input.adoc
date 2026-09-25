@@ -1,0 +1,21 @@
+* Unordered item
+continued on the next line.
+** Nested item
+* [x] Checked item
+* [ ] Unchecked item
+
+. Ordered one
+. Ordered two
++
+Attached paragraph.
++
+----
+attached listing
+----
+. Ordered three
+
+// Comment between lists.
+
+- Dash item
+
+<1> Callout text.

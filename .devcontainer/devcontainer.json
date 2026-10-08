@@ -1,5 +1,5 @@
 {
-  "name": "agent-plugins",
+  "name": "textlint-asciidoc",
   "image": "mcr.microsoft.com/devcontainers/base:3-ubuntu26.04",
   "init": true,
   "features": {
@@ -12,9 +12,6 @@
     },
     "ghcr.io/aetos382/devcontainer-features/apt-mirror:1": {
       "mirror": "https://ftp.udx.icscoe.jp/Linux/ubuntu/"
-    },
-    "ghcr.io/devcontainers/features/docker-in-docker:4": {
-      "moby": false
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/node:2": {
@@ -34,7 +31,6 @@
       "extensions": [
         "Anthropic.claude-code",
         "dbaeumer.vscode-eslint",
-        "docker.docker",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "github.vscode-github-actions",

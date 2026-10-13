@@ -6,7 +6,7 @@
 set -euo pipefail
 
 # renovate: datasource=npm depName=renovate
-RENOVATE_VERSION='44.148.4'
+RENOVATE_VERSION='44.149.1'
 
 npm install -g typescript-language-server
 

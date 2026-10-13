@@ -5,6 +5,7 @@
     ],
     "deny": [
       "Edit(**/*-lock.json)",
+      "Edit(**/*.lock)",
       "Edit(test/fixtures/**/output.json)"
     ]
   },

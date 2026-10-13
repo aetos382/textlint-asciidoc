@@ -18,7 +18,10 @@ git show ':renovate.json' > "$tmp_dir/renovate.json"
 if command -v renovate-config-validator >/dev/null 2>&1; then
   validator=(renovate-config-validator)
 else
-  validator=(npx --yes --package renovate -- renovate-config-validator)
+  # devcontainer と同じバージョンで検証する。hook はリポジトリのルートで実行される。
+  # shellcheck source=SCRIPTDIR/../.devcontainer/versions.sh
+  source .devcontainer/versions.sh
+  validator=(npx --yes --package "renovate@${RENOVATE_VERSION}" -- renovate-config-validator)
 fi
 
 # Codespaces（CODESPACES=true）では Renovate がリポジトリ名を stdin で尋ねて止まるので、

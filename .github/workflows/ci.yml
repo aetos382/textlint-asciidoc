@@ -1,3 +1,5 @@
+# This workflow is managed by gh actions-lock.
+
 name: CI
 
 on:
@@ -16,10 +18,10 @@ jobs:
       matrix:
         node-version: [22, 24]
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      - uses: actions/setup-node@v7.1.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
@@ -29,13 +31,50 @@ jobs:
       - run: npm test
       - run: npm run build
 
-  # branch ruleset で要求するステータスチェック。マトリクスの値が変わってもチェック名が変わらないよう、test の全ジョブの結果をここで束ねる。
-  test-result:
+  # ワークフローと actions.lock のずれや、読めないロックファイルは、ランナーの側では固定が外れるだけで
+  # 失敗にならないことがあるので、ここで止める。
+  actions-lock:
+    runs-on: ubuntu-latest
+    # タグ指定で取得した拡張機能にトークンを渡すので、読み取りだけに絞る。
+    permissions:
+      contents: read
+    env:
+      # 拡張機能の取得と、--verify が行う GitHub API の呼び出しに使う。
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify actions.lock
+        run: |
+          set -euo pipefail
+          # devcontainer や Renovate と同じバージョンで検証する。
+          source .devcontainer/versions.sh
+          gh extension install github/gh-actions-lock --pin "${GH_ACTIONS_LOCK_VERSION}"
+          # 終了コードだけでは判定しない。GitHub API に届かないと、コミットを確かめられなかったことを
+          # warning の finding として出すだけで、終了コード 0 で終わるため。
+          # info の finding（削除済みワークフローの記録など）は許す。
+          status=0
+          result="$(gh actions-lock --no-fix --no-interactive --verify --json=valid,findings)" || status=$?
+          printf '%s\n' "${result}"
+          if [ "${status}" -ne 0 ]; then
+            exit "${status}"
+          fi
+          if ! jq -e '.valid == true and all(.findings[]; .severity == "info")' <<<"${result}" >/dev/null; then
+            echo "::error::gh actions-lock reported findings, or could not verify the pinned commits." >&2
+            exit 1
+          fi
+
+  # branch ruleset で要求するステータスチェック。マトリクスの値が変わってもチェック名が変わらないよう、test の全ジョブと actions-lock の結果をここで束ねる。
+  # ジョブを足したら needs と下の条件にも足す。足し忘れると、そのジョブは失敗してもマージを止めない。
+  # ジョブ ID は変えない。ruleset がこの名前で参照している。
+  ci-passed:
     if: always()
-    needs: test
+    needs: [test, actions-lock]
     runs-on: ubuntu-latest
     steps:
-      - if: needs.test.result != 'success'
+      - if: needs.test.result != 'success' || needs.actions-lock.result != 'success'
         run: |
           echo "test の結果: ${{ needs.test.result }}"
+          echo "actions-lock の結果: ${{ needs.actions-lock.result }}"
           exit 1

@@ -5,7 +5,7 @@
     "github>aetos382/renovate-presets//presets/devcontainer"
   ],
   "constraints": {
-    "ghActionsLock": "v0.1.6"
+    "ghActionsLock": "v0.2.0"
   },
   "packageRules": [
     {

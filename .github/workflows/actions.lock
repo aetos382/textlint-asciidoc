@@ -6,9 +6,6 @@ workflows:
     '.github/workflows/ci.yml':
         - 'actions/checkout@v7.0.1'
         - 'actions/setup-node@v7.1.0'
-    '.github/workflows/claude-code-review.yml':
-        - 'actions/checkout@v7.0.1'
-        - 'anthropics/claude-code-action@v1.0.251'
     '.github/workflows/claude.yml':
         - 'actions/checkout@v7.0.1'
         - 'anthropics/claude-code-action@v1.0.251'

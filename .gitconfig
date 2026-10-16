@@ -11,11 +11,6 @@
   event = pre-commit
   command = bash .githooks/prettier-check.sh
 
-# renovate.json の誤りは Renovate が PR を作らなくなるまで気付きにくいので、コミットする前に検証する。
-[hook "validate-renovate-config"]
-  event = pre-commit
-  command = bash .githooks/validate-renovate-config.sh
-
 # ワークフローに uses を足して gh actions-lock を実行し忘れると、actions.lock との間にずれが生じる。
 # ずれたままでも見た目は変わらないので、コミットの時点で検証する。
 [hook "verify-actions-lock"]

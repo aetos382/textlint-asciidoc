@@ -1,5 +1,3 @@
-# This workflow is managed by gh actions-lock.
-
 name: CI
 
 on:
@@ -60,7 +58,7 @@ jobs:
           gh extension install github/gh-actions-lock --pin "${GH_ACTIONS_LOCK_VERSION}"
           # 終了コードだけでは判定しない。GitHub API に届かないと、コミットを確かめられなかったことを
           # warning の finding として出すだけで、終了コード 0 で終わるため。
-          # info の finding（削除済みワークフローの記録など）は許す。v0.1.6 で確認。
+          # info の finding（削除済みワークフローの記録など）は許す。v0.2.0 で確認。
           status=0
           result="$(gh actions-lock --no-fix --no-interactive --verify --json=valid,findings)" || status=$?
           printf '%s\n' "${result}"

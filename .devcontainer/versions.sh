@@ -8,7 +8,7 @@
 # export しておくと、source 先で使う変数として ShellCheck の SC2034 も出なくなる。
 
 # renovate: datasource=npm depName=renovate
-RENOVATE_VERSION='44.155.2'
+RENOVATE_VERSION='44.155.3'
 export RENOVATE_VERSION
 
 # gh の拡張機能 gh-actions-lock。renovate.json の constraints.ghActionsLock と同じ値にする。

@@ -29,14 +29,11 @@ jobs:
       - run: npm test
       - run: npm run build
 
-  # renovate.json の誤りは、マージした後に Renovate が止まるまで気付きにくい。pre-commit hook は
-  # 迂回できるので、ここでも検証する。共有 preset のリポジトリの再利用可能ワークフローを、preset と
-  # 同じく @main で参照する。job の uses は gh actions-lock が固定しない（v0.2.0 で確認）。
+  # renovate.json の誤りは、マージした後に Renovate が止まるまで気付きにくいので、マージ前にここで
+  # 止める。共有 preset のリポジトリの再利用可能ワークフローを、preset と同じく @main で参照する。job の uses は gh actions-lock が固定しない（v0.2.0 で確認）。
+  # Renovate のバージョンは、再利用可能ワークフローに書いてあるもの（Renovate が更新する）を使う。
   renovate-config:
     uses: aetos382/renovate-presets/.github/workflows/renovate-config.yml@main
-    with:
-      # devcontainer や pre-commit hook と同じバージョンで検証する。
-      versions-file: .devcontainer/versions.sh
 
   # ワークフローと actions.lock のずれや、読めないロックファイルは、ワークフローを見ただけでは
   # 分からず、pre-commit hook は迂回できるので、ここで止める。

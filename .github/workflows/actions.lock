@@ -6,9 +6,6 @@ workflows:
     '.github/workflows/ci.yml':
         - 'actions/checkout@v7.0.1'
         - 'actions/setup-node@v7.1.0'
-    '.github/workflows/claude.yml':
-        - 'actions/checkout@v7.0.1'
-        - 'anthropics/claude-code-action@v1.0.251'
 dependencies:
     'actions/checkout@v7.0.1':
         ref: 'v7.0.1'
@@ -20,15 +17,3 @@ dependencies:
         commit: 'sha1-949feb2413d6458794dcd2491c4babbbce0c15c1'
         owner_id: 44036562
         repo_id: 189476904
-    'anthropics/claude-code-action@v1.0.251':
-        ref: 'v1.0.251'
-        commit: 'sha1-374f254f5efaf968abfe15d399fd90972e8138b9'
-        owner_id: 76263028
-        repo_id: 986421638
-        uses:
-            - 'oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6'
-    'oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6':
-        ref: 'v2.2.0'
-        commit: 'sha1-0c5077e51419868618aeaa5fe8019c62421857d6'
-        owner_id: 108928776
-        repo_id: 512644635

@@ -1,5 +1,9 @@
 # CLAUDE.md
 
+## ソース管理
+
+`main` ブランチにはコミットしない。トピック ブランチを作ってからコミットする。
+
 ## コマンド
 
 - `npm run typecheck` / `npm run lint` / `npm test` / `npm run build`: CI（`.github/workflows/ci.yml`）はこの順で実行する。まとめて確認するときは `verify` スキルを使う。
